@@ -1,3 +1,9 @@
 # M-Vida
 
-Portfolio project
+## Portfolio project
+# Technologies
+- Django 4.1
+- Venv
+- Python
+- Docker
+- PostgreSQL
