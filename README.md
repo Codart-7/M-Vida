@@ -4,7 +4,7 @@
 # Technologies
 - Django 4.1
 - Venv
-- Python
+- Python 3.8.10
 - Docker
 - PostgreSQL
 # File structure
