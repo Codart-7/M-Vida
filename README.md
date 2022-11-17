@@ -6,6 +6,7 @@
 - Django 4.1
 - Venv
 - Python 3.8.10
+- python decouple: for hiding secret keys
 ### Deployment
 - Docker
 ### Database
