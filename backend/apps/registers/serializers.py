@@ -6,11 +6,10 @@ from rest_framework import status
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 
-"""
-check folder api for user serializer
-"""
-"""api to register a new user
-"""
+
+#check folder api for user serializer
+
+
 
 
 class RegisterSerializer:
@@ -38,9 +37,9 @@ class RegisterSerializer:
                 }
 
         def validate(self, attrs):
-            """
-            checks if passwords match
-            """
+            
+            #checks if passwords match
+            
             if attrs['password'] != attrs['password2']:
                 raise serializers.ValidationError(
                         {
@@ -50,10 +49,11 @@ class RegisterSerializer:
                         )
                 return attrs
 
+        
         def create(self, validated_data):
-            """
-            create a new User
-            """
+            
+            #create a new User
+            
             user = User.objects.create(
                     username=validated_data['username'],
                     email=validated_data['email'],
@@ -68,3 +68,4 @@ class RegisterSerializer:
             user.set_password(validated_data['password'])
             user.save()
             return user
+        

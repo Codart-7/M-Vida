@@ -5,9 +5,9 @@ from rest_framework.response import Response
 from .serializers import RegisterSerializer
 from .models import UserProfile, Contact
 
-"""
-views for the registration of a new users
-"""
+
+#views for the registration of a new users
+
 class RegisterListAPIView(APIView):
     """creates a new user
     """
@@ -35,4 +35,3 @@ class RegisterListAPIView(APIView):
                     serializer.data,
                     status=status.HTTP_201_CREATED
                     )
-
