@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Navigation loginState={loggedIn} handleLoginState={setLoggedIn} />
-      <main className='pt-[90px] min-h-[100vh] max-w-3xl w-11/12 mx-auto'>
+      <main className='pt-[90px] min-h-[100vh] max-w-5xl w-11/12 mx-auto'>
         <Routes>
           <Route exact path='/' element={<Landing />} />
           <Route path="/signin" element={<SignIn  handleLoginState={setLoggedIn} />} />
