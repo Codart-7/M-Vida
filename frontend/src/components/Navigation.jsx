@@ -50,7 +50,7 @@ const Navigation = ({loginState, handleLoginState}) => {
                 <Link to="/">Home</Link>
             </li>
             {
-                !loginState &&
+                loginState &&
                 <li 
                     className={`py-4 text-white text-xl lg:py-0 lg:mx-2 lg:text-black ${color && "lg:text-white"}`}
                     onClick={handleClick}
